@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 26, 2017 8:16:08 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Bookstore.entity.Boek" table="boek" catalog="boekenwinkel" optimistic-lock="version">
+        <id name="idboek" type="java.lang.Integer">
+            <column name="idboek" />
+            <generator class="identity" />
+        </id>
+        <property name="titel" type="string">
+            <column name="titel" length="25" not-null="true" />
+        </property>
+        <property name="auteur" type="string">
+            <column name="auteur" length="25" not-null="true" />
+        </property>
+        <property name="isbn" type="string">
+            <column name="isbn" length="25" not-null="true" />
+        </property>
+        <property name="uitgever" type="string">
+            <column name="uitgever" length="25" not-null="true" />
+        </property>
+        <property name="jaar" type="string">
+            <column name="jaar" length="25" not-null="true" />
+        </property>
+        <property name="foto" type="string">
+            <column name="foto" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
